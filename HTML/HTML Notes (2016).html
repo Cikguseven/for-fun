@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="HTML Reference for Beginners">
+	<meta name="author" content="Kieron Lee">
+	<title>HTML Reference</title>
+	<link rel="StyleSheet" type="text/css" href="styles.css" title="Default Styles">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<header id="header">
+		<h1>HTML Reference</h1>
+		<h5>By Kieron</h5>
+	</header>
+
+
+	<div id="toc">
+		<h3 style="text-align:center;"><ins>Table of Contents:</ins></h3>
+		<ol>
+			<li><a href="#basic-structure">Basic structure of HTML document</a></li>
+			<li><a href="#pre-head">Pre-&lt;head&gt; tags</a></li>
+			<li><a href="#head">&lt;head&gt; elements</a></li>
+			<li><a href="#body">Common body tags</a></li>
+			<li><a href="#attributes">Attributes</a></li>
+			<li><a href="#comments">Comments</a></li>
+			<li><a href="#text">Text formatting</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#links">Links</a></li>
+			<li><a href="#bookmarks">Bookmarks</a></li>
+			<li><a href="#tables">Tables</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#blocks">Blocks</a></li>
+			<li><a href="#iframes">Iframes</a></li>
+			<li><a href="#layouts">Layouts</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#css">CSS</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#references">Reference List</a></li>
+			<li><a href="#notes">Notes</a></li>
+		</ol>
+	</div>
+
+
+	<div>
+		<h1 id="basic-structure">Basic structure of HTML document:</h1>
+		<pre>
+		&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+				&lt;head&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+				&lt;/body&gt;
+			&lt;/html&gt;</pre><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="pre-head">Pre-&lt;head&gt; tags:</h1>
+		<ul>
+			<li>Declaring Document Language - <code>&lt;html lang="(Language-Country)"&gt;</code> (Example: en-US, en-SG, en-UK)</li>
+		</ul><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="head">&lt;head&gt; elements:</h1>
+		<ul>
+			<li>Container for metadata (data about data) and is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag</li>
+			<li>Metadata typically define the document title, character set, styles, links, scripts, and other meta information</li>
+		</ul><br>
+
+		<h2>&lt;title&gt; element:</h2>
+		<ul>
+			<li>Defines the title of the HTML document</li>
+			<li>Provides a title for the page when it is added to favorites</li>
+			<li>Displays a title for the page in search engine results</li>
+		</ul><br>
+
+		<h2>&lt;style&gt; element:</h2>
+		<p><strong>Defines style information for a single HTML page</strong></p><br>
+		<br>
+		<h2>&lt;link&gt; element:</h2>
+		<p><strong>Used to link to external style sheets</strong></p><br>
+		<br>
+		<h2>&lt;meta&gt; element:</h2>
+		<ul>
+			<li>Used to specify which character set is used, page description, keywords, author, and other metadata</li>
+			<li>Used by browsers (how to display content), by search engines (keywords), and other web services</li>
+		</ul>
+
+		<table>
+			<tr>
+				<th>Description of attribute</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td>Define the character set used</td>
+				<td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Define a description of your web page</td>
+				<td><code>&lt;meta name="description" content="Free Web tutorials"&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Define keywords for search engines</td>
+				<td><code>&lt;meta name="keywords" content="HTML, CSS, XML, JavaScript"&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Define the author of a page</td>
+				<td><code>&lt;meta name="author" content="Kieron Lee"&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Refresh document at a certain time interval</td>
+				<td><code>&lt;meta http-equiv="refresh" content="30"&gt;</code></td>
+			</tr>
+		</table><br>
+
+		<h2>&lt;base&gt; element:</h2>
+		<p><strong>Specifies the base URL and base target for all relative URLs in a page</strong></p><br>
+		<br>
+		<p><strong>Example:</strong></p>&nbsp;<code>&lt;base href="http://www.w3schools.com/images/" target="_blank"&gt;</code><br>
+		<br>
+		<a href="#target-a">Table of target attributes</a><br>
+		<br>
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="body">Common body tags:</h1>
+		<table>
+			<tr>
+				<th>Description of tag</th>
+				<th>Syntax of tag</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>Abbreviation</td>
+				<td><code>&lt;abbr title="(Full word or acronym)"&gt;(Abbreviated word or acronym)&lt;/abbr&gt;</code></td>
+				<td><abbr title="(Singapore Dollar)">SGD</abbr></td>
+			</tr>
+			<tr>
+				<td>Aside</td>
+				<td><code>&lt;aside&gt;(Content aside from the content it is placed in)&lt;aside&gt;</code></td>
+				<td><aside>Content related to the surrounding content</aside></td>
+			</tr>
+			<tr>
+				<td>Bi-directional override</td>
+				<td><code>&lt;bdo dir="(Direction of text)&gt;(Text)&lt;/bdo&gt;</code></td>
+			<td><bdo dir="rtl">Palindrome</bdo></td>
+			</tr>
+			<tr>
+				<td>Blockquote</td>
+				<td><code>&lt;blockquote cite="(Link)"&gt;</code><code>&lt;/blockquote&gt;</code></td>
+				<td><blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote></td>
+			</tr>
+			<tr>
+				<td>Citation of work title</td>
+				<td><code>&lt;cite&gt;(Title of work in italics)&lt;/cite&gt;</code></td>
+				<td><cite>The Scream</cite> by Edward Munch. Painted in 1893.</td>
+			</tr>
+			<tr>
+				<td>Contact information</td>
+				<td><code>&lt;address&gt;(Contact details)&lt;/address&gt;</code></td>
+				<td>
+				<address>
+				Written by Jon Doe.<br> 
+				Visit us at:<br>
+				Example.com<br>
+				Box 564, Disneyland<br>
+				USA
+				</address></td>
+			</tr>
+			<tr>
+				<td>Headings</td>
+				<td><code>&lt;h1&gt;</code> <code>&lt;/h1&gt;</code>, <code>&lt;h2&gt;</code> <code>&lt;/h2&gt;</code>, <code>&lt;h3&gt;</code> <code>&lt;/h3&gt;</code>, <code>&lt;h4&gt;</code> <code>&lt;/h4&gt;</code>, <code>&lt;h5&gt;</code> <code>&lt;/h5&gt;</code>, <code>&lt;h6&gt;</code> <code>&lt;/h6&gt;</code></td>
+				<td>
+				<h1>H1 Heading</h1>
+				<h2>H2 Heading</h2>
+				<h3>H3 Heading</h3>
+				<h4>H4 Heading</h4>
+				<h5>H5 Heading</h5>
+				<h6>H6 Heading</h6>
+				</td>
+			</tr>
+			<tr>
+				<td>Horizontal line</td>
+				<td><code>&lt;hr&gt;</code></td>
+				<td><hr></td>
+			</tr>
+			<tr>
+				<td>Line break</td>
+				<td><code>&lt;br&gt;</code> OR <code>&lt;br/&gt;</code></td>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td>Keyboard input</td>
+				<td><code>&lt;kbd&gt;(Text)&lt;/kbd&gt;</code></td>
+				<td><kbd>Monospaced text</kbd></td>
+			</tr>
+			<tr>
+				<td>Paragraph</td>
+				<td><code>&lt;p&gt;(Paragraph)&lt;/p&gt;</code></td>
+				<td><p></p></td>
+			</tr>
+			<tr>
+				<td>Paragraph with title</td>
+				<td><code>&lt;p title="(Text that appears when paragraph is mouse overed)"&gt;&lt;/p&gt;</code></td>
+				<td><p title=" "></p></td>
+			</tr>
+			<tr>
+				<td>Preformatted text</td>
+				<td><code>&lt;pre&gt;(Text which is displayed in fixed-width font with preserved spaces and line breaks)&lt;/pre&gt;</code></td>
+				<td>
+				<pre>Lorem ipsum 
+				dolor sit 
+				amet </pre></td>
+			</tr>
+			<tr>
+				<td>Programming code</td>
+				<td><code>&lt;code&gt;(Code in monospaced text)&lt;/code&gt;</code></td>
+				<td><code>Code</code></td>
+			</tr>
+			<tr>
+				<td>Sample output from computer program</td>
+				<td><code>&lt;samp&gt;(Sample output in monospaced text)&lt;/samp&gt;</code></td>
+				<td><samp>Raw output</samp></td>
+			</tr>
+			<tr>
+				<td>Short quotation</td>
+				<td><code>&lt;q&gt;(Quotation)&lt;/q&gt;</code></td>
+				<td><q>What we think, we become</q>- Buddha</td>
+			</tr>
+			<tr>
+				<td>Variable</td>
+				<td><code>&lt;var&gt;(Italicised mathematical expression or programming variable)&lt;/var&gt;</code></td>
+				<td><var>x+y</var></td>
+			</tr>
+		</table><br>
+
+		<a href="#">Back to top of page</a>  
+	</div>
+
+
+	<div>
+		<h1 id="attributes">Attributes:</h1>
+		<table>
+			<tr>
+				<th>Attribute</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>alt</td>
+				<td>Provides text for screen readers</td>
+			</tr>
+			<tr>
+				<td>disabled</td>
+				<td>Disables input element</td>
+			</tr>
+			<tr>
+				<td>height & width</td>
+				<td>Provide size information for images</td>
+			</tr>
+			<tr>
+				<td>href</td>
+				<td>URL for hyperlink</td>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>unique id for element</td>
+			</tr>
+			<tr>
+				<td>src</td>
+				<td>URL to image</td>
+			</tr>
+			<tr>
+				<td>style</td>
+				<td>Inline CSS style for an element</td>
+			</tr>
+			<tr>
+				<td>title</td>
+				<td>Provides additional information when mouse overed</td>
+			</tr>
+			<tr>
+				<td>value</td>
+				<td>Value (in text form) for an input element</td>
+			</tr>
+		</table><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="comments">Comments:</h1><!--Wish that syntax for comments in HTML is like that of Arduino-->
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;!-- (Comments) --&gt;</code><br>
+		<br>
+		<ul>
+			<li>Won't be displayed by browser</li>
+			<li>Can be used for notifications and reminders</li>
+			<li>Useful for debugging line by line</li>
+		</ul><br>
+		<p><strong>Example of long comment:</strong></p>
+		<pre>&lt;!-- 
+		This is a long comment example. This is a long comment example.
+		This is a long comment example. This is a long comment example.
+		--&gt;</pre><br>
+
+		<h2>Conditional Comments for Internet Explorer:</h2><br>
+		<code>&lt;!--[if IE8]&gt;</code><br>
+		<code>&lt;p&gt;</code>Welcome! You are using Internet Explorer ver. 8<code>&lt;/p&gt;</code>
+		<code>&lt;![endif]--&gt;</code>.
+		<a href="https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx" target="_blank">More info</a><br>
+		<br>
+		<h2>Software Comment Tag:</h2>&nbsp;<code>&lt;!--webbot bot--&gt;</code><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="text">Text formatting:</h1>
+		<table>
+			<tr>
+				<th>Description of tag</th>
+				<th>Syntax of tag</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>Bold</td>
+				<td><code>&lt;b&gt;</code><code>&lt;/b&gt;</code></td>
+				<td><b>Bolded text</b></td>
+			</tr>
+			<tr>
+				<td>Delete</td>
+				<td><code>&lt;del&gt;</code><code>&lt;/del&gt;</code></td>
+				<td><del>Text with strikethrough</del></td>
+			</tr>
+			<tr>
+				<td>Emphasis</td>
+				<td><code>&lt;em&gt;</code><code>&lt;/em&gt;</code></td>
+				<td><em>Italicised text with emphasis</em></td>
+			</tr>
+			<tr>
+				<td>Insert</td>
+				<td><code>&lt;ins&gt;</code><code>&lt;/ins&gt;</code></td>
+				<td><ins>Inserted text with underline</ins></td>
+			</tr>
+			<tr>
+				<td>Italic</td>
+				<td><code>&lt;i&gt;</code><code>&lt;/i&gt;</code></td>
+				<td><i>Italicised text</i></td>
+			</tr>
+			<tr>
+				<td>Marked</td>
+				<td><code>&lt;mark&gt;</code><code>&lt;/mark&gt;</code></td>
+				<td><mark>Highlighted and marked text</mark></td>
+			</tr>
+			<tr>
+				<td>Small</td>
+				<td><code>&lt;small&gt;</code><code>&lt;/small&gt;</code></td>
+				<td style="border:1px solid black;border-collapse:collapse;padding:6px;"><small>Small text</small></td>
+			</tr>
+			<tr>
+				<td>Strong [Emphasis]</td>
+				<td><code>&lt;strong&gt;</code><code>&lt;/strong&gt;</code></td>
+				<td><strong>Text with strong emphasis</strong></td>
+			</tr> 
+			<tr>
+				<td>Subscript</td>
+				<td><code>&lt;sub&gt;</code><code>&lt;/sub&gt;</code></td>
+				<td style="border:1px solid black;border-collapse:collapse;padding:6px;"><sub>Subscripted text</sub></td>
+			</tr> 
+			<tr>
+				<td>Superscript</td>
+				<td><code>&lt;sup&gt;</code><code>&lt;/sup&gt;</code></td>
+				<td style="border:1px solid black;border-collapse:collapse;padding:6px;"><sup>Superscripted text</sup></td>
+			</tr> 
+		</table><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="images">Images:</h1>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;img src="(Image URL)" alt="(Alternate text)" height="(Height of image in pixels/percent)" width="(Width of image in pixels/percent)"&gt;</code><br>
+		<br>
+		<p><strong>Example:</strong></p>
+		<code>&lt;img src="facebook.com" alt="Image of FB" style="width:300px;height:230px;"&gt;</code><br> 
+		OR <code>&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;</code> (Avoid using this)<br>
+		<br>
+		<p><strong>Result:</strong></p><br>
+		<img src="sad-lyfe.png" alt="Random dude stuck in gold 4"><br>
+		<br>
+
+		<h2>Attributes:</h2>
+		<ul>
+			<li>src attribute specifies the URL (web address) of the image</li>
+			<li>alt attribute specifies an alternate text for an image if the image cannot be displayed or viewed and can be read by screen readers</li>
+		</ul><br>
+
+		<h2>Images stored in other locations:</h2>
+		<p><strong>Example of images stored in another folder:</strong></p>&nbsp;<code>&lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</code>
+		<ul>
+			<li>Browser expects to find image in same folder as webpage</li>
+			<li>Include the folder name in the src attribute</li>
+		</ul>
+		<p><strong>Example of images stored on another server:</strong></p>&nbsp;<code>&lt;img src="http://www.w3schools.com/images/green.jpg" alt="W3Schools"&gt;</code><br>
+		<br>
+
+		<h2>Animated images/GIFs:</h2>
+		<p><strong>Example of GIF Image:</strong></p>&nbsp;<code>&lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;</code><br>
+		<br>
+		<p><strong>Result:</strong></p><br>
+		<img src="https://media.giphy.com/media/BkAoonS4ywOre/giphy.gif" alt="Dead Man Walking" style="width:110px;height:110px;"><br>
+		<br>
+
+		<h2>Image floating:</h2>
+		<p><strong>Use CSS to float an image to the left or right of text</strong></p><br>
+		<br>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;... style="float:(left/right);..."&gt;</code><br>
+		<br>
+		<p><strong>Example of floated images:</strong></p>&nbsp;<code>&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;The image will float to the right of the text.&lt;/p&gt;</code><br>
+		OR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;The image will float to the left of the text.&lt;/p&gt;</code><br>
+		<br>
+		<p><strong>Result:</strong></p><br>
+		<p><img src="http://christianmomthoughts.com/wp-content/uploads/christianencouragementsecularencouragement.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">The image will float to the right of the text.</p>
+		<p><img src="http://christianmomthoughts.com/wp-content/uploads/christianencouragementsecularencouragement.jpg" alt="Smiley face" style="float:left;width:42px;height:42px;">The image will float to the left of the text.</p><br>
+
+		<h2>Image maps:</h2>
+		<ul>
+			<li>Images with clickable areas</li>
+			<li>Use the <code>&lt;map&gt;</code> tag to define an image map</li>
+			<li>The <code>&lt;map&gt;</code> tag is associated with the <code>&lt;img&gt;</code>'s usemap attribute and creates a relationship between the image and the map</li>
+			<li>The <code>&lt;map&gt;</code> tag contains a number of <code>&lt;area&gt;</code> tags that defines the clickable areas in the image-map</li>
+			<li>When clicked, the images redirects the user to another URL or image depending on the href value</li>
+		</ul>
+		<p><strong>Example of image map:</strong></p>
+		<pre>
+		&lt;img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"&gt;
+		&lt;map name="planetmap"&gt;
+			&lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"&gt;
+			&lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
+			&lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
+		&lt;/map&gt;</pre><br>
+		<p><strong>Coordinate values:</strong></p>
+		<table>
+			<tr>
+				<th>Value</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>x1, y1, x2, y2</td>
+				<td>Coordinates of the left, top, right, bottom corner of a rectangle (for shape="rect")</td>
+			</tr>
+			<tr>
+				<td>x, y, radius</td>
+				<td>Coordinates of the center of a circle and the radius (for shape="circle")</td>
+			</tr>
+			<tr>
+				<td>x1, y1, x2, y2, xn, yn</td>
+				<td>Coordinates of the edges of a polygon. First and last coordinate pair should be the same. (for shape="poly")</td>
+			</tr>
+		</table><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+
+	<div>
+		<h1 id="links">Links:</h1>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;a href="(Link)"&gt;</code>(Link Description)<code>&lt;/a&gt;</code><br>
+		<br>
+		<p><strong>Example:</strong></p>&nbsp;<code>&lt;a href="http://www.w3schools.com/html/"&gt;</code>Link to Facebook<code>&lt;/a&gt;</code><br>
+		<br>
+		<a href="https://www.mousehuntgame.com" target="_blank">Link to MouseHunt</a><br>
+		<ul>
+			<li>href attribute specifies the destination address</li>
+			<li>Link text can be an HTML image or any other HTML element</li>
+			<li>Use trailing slash (/) on subfolder addresses</li>
+		</ul><br>
+
+		<h2>Local links:</h2>
+		<ul>
+			<li>Links to the same web site</li>
+			<li>Specified with a relative URL (without http://www....)</li>
+		</ul>
+		<p><strong>Example:</strong></p>&nbsp;<code>&lt;a href="html_images.asp"&gt;</code>HTML Images<code>&lt;/a&gt;</code><br>
+		<br>
+
+		<h2>Links (Colour):</h2>
+		<p><strong>Property of links:</strong></p>&nbsp;When link is moused over, cursor turns into hand and colour of link element changes<br>
+		<br>
+		<p><strong>By default:</strong></p>
+		<ul>
+			<li>Unvisited links are underlined and blue</li>
+			<li>Visited links are underlined and purple</li>
+			<li>Active links (Cursor being held down over link) are underlined and red</li>
+		</ul><br>
+		<p><strong>Change the default colours by using CSS styles</strong></p><br>
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;style&gt;
+		a:link {
+		color:green;
+		background-color:transparent; 
+		text-decoration:none;
+		}
+		a:visited {
+		color:pink;
+		background-color:transparent;
+		text-decoration:none
+		}
+		a:hover {
+		color:red;
+		background-color:transparent;
+		text-decoration:underline;
+		}
+		a:active {
+		color:yellow;
+		background-color:transparent;
+		text-decoration:underline;
+		}
+		&lt;/style&gt;</pre>
+
+		<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target="_blank">Text decoration values</a><br>
+
+		<h2 id="target-a">Target attribute:</h2>
+		<p><strong>Specify where linked document will be opened</strong></p><br>
+		<p><strong>Example:</strong></p><code>&lt;a href="http://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;</code><br>
+		<br>
+		<table>
+			<tr>
+				<th>Target Value:</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>_blank</td>
+				<td>Opens linked document in new window or tab</td>
+			</tr>
+			<tr>
+				<td>_self</td>
+				<td>(Default) Opens linked document in the same page</td>
+			</tr>
+			<tr>
+				<td>_parent</td>
+				<td>Opens linked document in the parent frame</td>
+			</tr>
+			<tr>
+				<td>_top</td>
+				<td>Opens linked document in the full body of the window</td>
+			</tr>
+			<tr>
+				<td>framename</td>
+				<td>Opens linked document in a named frame</td>
+			</tr>
+		</table><br>
+		<p><strong>Use target="_top" to break out of the frame if page is locked in a frame</strong></p><br>
+
+		<h2>Images as links:</h2>
+		<p><strong>Example:</strong></p>
+		<code>&lt;a href="https://www.facebook.com"&gt;</code><code>&lt;img src="fblogo.gif" alt="FB link"style="width:30px;height:50px;border:0;"&gt;</code><code>&lt;/a&gt;</code><br>
+		<p><strong>Result:</strong></p><br>
+		<a href="https://www.reddit.com" target="_blank"><img src="http://dwglogo.com/wp-content/uploads/2015/11/Reddit-Logo-Transparent.png" alt="reddit logo" style="width:180px;height:90px;border:0"></a><br>
+		<br>
+		<p><strong>border:0 is added to prevent IE9 (and earlier) from displaying a border around the image.</strong></p><br>
+		<br>
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="bookmarks">Bookmarks:</h1>
+		<ul>
+			<li>Allows reader to jump to specific part of webpage</li>
+			<li>Practical for long webpages</li>
+		</ul><br>
+		<p><strong>Steps to create bookmark:</strong></p>
+		<ol>
+			<li>Create a bookmark with the id Attribute
+				<ul class="bookmark1">
+					<li><code>&lt;h2 id="tips"&gt;Useful Tips Section&lt;/h2&gt;</code></li>
+				</ul> 
+			</li>
+			<li>Add a link to the bookmark from the same page:
+		 		<ul class="bookmark1">
+		 			<li><code>&lt;a href="#tips"&gt;Visit the Useful Tips Section&lt;/a&gt;</code></li>
+		 		</ul>
+		 	</li>
+		 	<li>Add a link to the bookmark from another page:	 
+		 		<ul class="bookmark1">
+		 			<li><code>&lt;a href="html_tips.htm#tips"&gt;Visit the Useful Tips Section&lt;/a&gt;</code></li>
+		 		</ul>
+		 	</li>
+		</ol><br>
+
+		<a href="#">Back to top of page</a>
+	</div>  
+
+
+	<div>
+		<h1 id="tables">Tables:</h1>
+		<p><strong>Example (Code):</strong></p><br>
+		<pre>
+		&lt;table style="width:100%"&gt;
+			&lt;caption&gt;Test Scores&lt;caption&gt;
+			&lt;tr&gt;
+				&lt;th style="text-align:left"&gt;One&lt;th&gt;
+				&lt;th style="text-align:left"&gt;Two&lt;th&gt;
+				&lt;th style="text-align:left"&gt;Three&lt;th&gt;
+			&lt;tr&gt;
+			&lt;tr&gt;
+				&lt;td colspan="2"&gt;Jill&lt;td&gt;   
+				&lt;td&gt;50&lt;td&gt;
+			&lt;tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Eve&lt;td&gt;
+				&lt;td&gt;Jackson&lt;td&gt;            
+				&lt;td&gt;94&lt;td&gt;
+			&lt;tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;John&lt;td&gt;
+				&lt;td&gt;Doe&lt;td&gt;          
+				&lt;td&gt;80&lt;td&gt;
+			&lt;tr&gt;
+		&lt;table&gt;
+		</pre>
+
+		<strong>Example:</strong>
+		<table>
+			<caption><strong>Test Scores</strong></caption>
+			<tr>
+				<th>Name</th>
+				<th>Score</th>
+				<th>Rank</th>
+			</tr>
+			<tr>
+				<td>Jill</td> 
+				<td>50</td>
+				<td>3<sup>rd</sup></td>
+			</tr>
+			<tr>
+				<td>Eve</td>    
+				<td>94</td>
+				<td>1<sup>st</sup></td>
+			</tr>
+			<tr>
+				<td>John</td>   
+				<td>80</td>
+				<td>2<sup>nd</sup></td>
+			</tr>
+		</table><br>
+		
+		<h2>Tags for table:</h2>
+		<table>
+			<tr>
+				<th>Description of tag</th>
+				<th>Syntax of tag</th>
+			</tr>
+			<tr>
+				<td>Caption</td>
+				<td><code>&lt;caption&gt;(Caption)&lt;/caption&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Tables</td>
+				<td><code>&lt;table&gt;(Table)&lt;/table&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Table Data</td>
+				<td><code>&lt;td&gt;(Entry of data)&lt;/td&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Table Headings</td>
+				<td><code>&lt;th&gt;(Header of column[s])&lt;/th&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Table Rows (Horizontal)</td>
+				<td><code>&lt;tr&gt;(Row in table)&lt;/tr&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Column properties for each column within a <code>&lt;colgroup&gt;</code> element</td>
+				<td><code>&lt;col&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Group of one or more columns in a table for formatting </td>
+				<td><code>&lt;colgroup&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Groups the header content in a table</td>
+				<td><code>&lt;thead&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Groups the body content in a table</td>
+				<td><code>&lt;tbody&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Groups the footer content in a table</td>
+				<td><code>&lt;tfoot&gt;</code></td>
+			</tr>
+		</table>
+
+		<ul>
+			<li>Create tables in ‘left to right, up to down’ order</li>
+			<li>Table Data can contain all sorts of HTML elements like text, images, lists, other tables, etc.</li>
+		</ul><br>
+
+		<h2>Borders:</h2>
+		<p><strong>Example (Inline CSS):</strong></p> <code>&lt;table style="border:1px solid black;width:100%"&gt;&lt;/table&gt;</code><br>
+		<br>
+		<p><strong>Example (Internal CSS):</strong></p>
+		<pre>
+		&lt;style&gt;
+		table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				border-spacing: 5px;
+			}
+		&lt;/style&gt;</pre><br>
+		<ul>
+			<li>Border collapse allows borders to collapse into one border</li>
+			<li>Border spacing specifies the space between the cells</li>
+		</ul><br>
+
+		<h2>Cell padding:</h2>
+		<ul>
+			<li>Specifies the space between the cells and the border</li>
+			<li>Table cells will be displayed without a padding if one is not specified</li>
+		</ul><br>
+		<p><strong>Example:</strong></p>
+		<pre>
+		table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		th, td {
+		padding: 15px;
+		}</pre><br>
+
+		<h2>Spanning:</h2>
+		<p><strong>Use the following attributes in tags <code>&lt;tr&gt; & &lt;td&gt;</code> to make the cells span out</strong></p>
+		<ul>
+			<li>colspan="(Number of columns spanned)" for spanning columns</li>
+			<li>rowspan="(Number of rows spanned)" for spanning rows</li>
+		</ul><br>
+
+		<h2>id Attribute:</h2>
+		<p><strong>Use id Attribute to define a special style for a table</strong></p><br>
+		<p><strong>Example (Internal CSS):</strong></p>
+		<pre>&lt;style&gt;
+		table#t01<!-- table id --> tr:nth-child(odd) {
+		background-color: #666;
+		}
+		table#t01 tr:nth-child(even) {
+		background-color: #fff;
+		}
+		table#t01 th {
+		color: white;
+		background-color: black;
+		}
+		&lt;/style&gt;</pre><br>
+		<p><strong>Above is a style for a table with grey background in its odd-numbered rows and white background in its even numbered rows</strong></p><br>
+		<br>
+		<a href="http://www.w3schools.com/cssref/sel_nth-child.asp" target="_blank">More on nth-child (CSS)</a><br>
+		<br>
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="lists">Lists:</h1>
+		<h2>Unordered lists:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		&lt;ul&gt;
+			&lt;li&gt;Coffee&lt;/li&gt;
+			&lt;li&gt;Tea&lt;/li&gt;
+			&lt;li&gt;Milk&lt;/li&gt;
+		&lt;/ul&gt;</pre><br>
+		<p><strong>Result:</strong></p>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ul><br>
+
+		<h2>List item marker:</h2>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>style="list-style-type:(value)"</code><br>
+		<br>
+		<table>
+			<tr>
+				<th>Value</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>disc</td>
+				<td>Sets the list item marker to a bullet (default)</td>
+			</tr>
+			<tr>
+				<td>circle</td>  
+				<td>Sets the list item marker to a circle</td>
+			</tr>
+			<tr>
+				<td>square</td>
+				<td>Sets the list item marker to a</td>
+			</tr>
+			<tr>
+				<td>none</td>
+				<td>The list items will not be marked</td>
+			</tr>
+		</table><br>
+
+		<h2>Ordered lists:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		&lt;ol&gt;
+			&lt;li&gt;Coffee&lt;/li&gt;
+			&lt;li&gt;Tea&lt;/li&gt;
+			&lt;li&gt;Milk&lt;/li&gt;
+		&lt;/ol&gt;</pre><br>
+
+		<p><strong>Result:</strong></p>
+		<ol>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol><br>
+
+		<h2>List item marker:</h2>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;ol type="(value)"&gt;</code><br>
+		<br>
+		<table>
+			<tr>
+				<th>Type</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>type="1"</td>
+				<td>The list items will be numbered with numbers (default)</td>
+			</tr>
+			<tr>
+				<td>type="A'</td>  
+				<td>The list items will be numbered with uppercase letters</td>
+			</tr>
+			<tr>
+				<td>type="a"</td>
+				<td>The list items will be numbered with lowercase letters</td>
+			</tr>
+			<tr>
+				<td>type="I"</td>
+				<td>The list items will be numbered with uppercase Roman numbers</td>
+			</tr>
+			<tr>
+				<td>type="i"</td>
+				<td>The list items will be numbered with lowercase Roman numbers</td>
+			</tr>
+		</table><br>
+
+		<h2>Description lists:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		&lt;dl&gt;
+			&lt;dt&gt;Coffee&lt;/dt&gt;
+			&lt;dd&gt;- black hot drink&lt;/dd&gt;
+			&lt;dt&gt;Milk&lt;/dt&gt;
+			&lt;dd&gt;- white cold drink&lt;/dd&gt;
+		&lt;/dl&gt;</pre><br>
+
+		<p><strong>Result:</strong></p>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>- black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>- white cold drink</dd>
+		</dl><br>
+
+		<h2>Nested lists:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		&lt;ul&gt;
+			&lt;li&gt;Coffee&lt;/li&gt;
+			&lt;li&gt;Tea
+				&lt;ul&gt;
+					&lt;li&gt;Black tea&lt;/li&gt;
+					&lt;li&gt;Green tea&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;Milk&lt;/li&gt;
+		&lt;/ul&gt;</pre><br>
+
+		<p><strong>Result:</strong></p>
+		<ul>
+		<li>Coffee</li>
+		<li>Tea
+			<ul>
+				<li>Black tea</li>
+				<li>Green tea</li>
+			</ul>
+		</li>
+		<li>Milk</li>
+		</ul><br>
+
+		<h2>Horizontal lists:</h2>
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;style&gt;
+		ul { <!-- List Structure -->
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333333;
+			}
+
+		li { <!-- Text alignment of menu boxes-->
+				float: left;
+			}
+
+		li a { <!-- Property of menu boxes -->
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 16px;
+				text-decoration: none;
+			}
+
+		li a:hover { <!-- Colour of menu boxes when hovered over -->
+				background-color: #111111;
+			}
+		&lt;/style&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;</pre><br>
+
+		<p><strong>Result:</strong></p>
+		<ul id="menu">
+			<li class="menu1"><a href="#home">Home</a></li>
+			<li class="menu1"><a href="#news">News</a></li>
+			<li class="menu1"><a href="#contact">Contact</a></li>
+			<li class="menu1"><a href="#about">About</a></li>
+		</ul><br>  
+		<br>
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="blocks">Blocks:</h1>
+		<h2>Block-level elements:</h2>
+
+		<p><strong>Block-level elements always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can)</strong></p><br>
+		<br>
+		Examples of block-level elements:
+		<ul>
+			<li>&lt;div&gt;</li>
+			<li>&lt;h1&gt; - &lt;h6&gt;</li>
+			<li>&lt;p&gt;</li>      
+			<li>&lt;form&gt;</li> 
+		</ul><br>
+
+		<h2>Inline elements:</h2>
+
+		<p><strong>Inline elements does not start on a new line and only takes up as much width as necessary</strong></p><br>
+		<br>
+		Examples of inline elements:
+		<ul>
+			<li>&lt;span&gt;</li>
+			<li>&lt;a&gt;</li>      
+			<li>&lt;img&gt;</li> 
+		</ul><br>
+
+		<h2>&lt;div&gt;:</h2>
+		<ul>
+			<li>Defines a section in a document (block-level)</li>
+			<li>Used as a container for other HTML elements</li>
+			<li>Has no required attributes, but both style and class are commonly used</li>
+			<li>Can be used together with CSS to style blocks of content</li>
+		</ul>
+
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;div style="background-color:black;color:white;padding:20px;"&gt;
+		&lt;h2&gt;London&lt;/h2&gt;
+		&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+		&lt;/div&gt;</pre>
+		<p><strong>Result:</strong></p>
+		<div style="background-color:black;color:white;padding:20px;">
+		<h2>London</h2>
+		<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+		</div><br>
+		<br>
+		<h2>&lt;span&gt;:</h2>
+		<ul>
+			<li>Defines a section in a document (inline)</li>
+			<li>Often used as a container for some text</li>
+			<li>Has no required attributes, but both style and class are commonly used</li>
+			<li>Can be used together with CSS to style parts of text</li>
+		</ul>
+
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;h1&gt;My &lt;span style="color:red"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;</pre>
+		<p><strong>Result:</strong></p>
+		<h1>My <span style="color:red">Important</span> Heading</h1><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="iframes">Iframes (Inline frame):</h1>
+		<p><strong>Used to display a web page within a web page</strong></p><br>
+		<br>
+		<p><strong>Syntax:</strong></p>&nbsp;<code>&lt;iframe src="(URL)" height="(Height of image in pixels/percent)" width="(Width of image in pixels/percent)" style="border:(value)"&gt;&lt;/iframe&gt;</code><br>
+		<br>
+		<p><strong>Result:</strong></p><br>
+		<iframe src="http://www.w3schools.com" height="216" width="1536" style="border:none"></iframe><br>
+
+		<h2>Iframe - Target for a link:</h2>
+		<ul>
+			<li>An iframe can be used as the target frame for a link</li>
+			<li>The target attribute of the link must refer to the name attribute of the iframe</li>  
+		</ul><br>
+		<p><strong>Example:</strong></p><br>
+		<pre>
+		&lt;iframe src="demo_iframe.htm" name="iframe_a"&gt;&lt;/iframe&gt;
+
+		&lt;p&gt;&lt;a href="http://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;</pre><br>
+		<p><strong>Result:</strong></p><br>
+		<iframe src="http://www.w3schools.com" height="216" width="1536" style="border:none" name="iframe_a"></iframe>
+		<p><a href="http://www.w3schools.com/html/html_basic.asp" target="iframe_a">Basic HTML @ W3Schools.com</a></p><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="layouts">Layouts:</h1>
+		<h2>Layout elements:</h2>
+		<ul>
+			<li>Websites often display content in multiple columns (like a magazine or newspaper)</li>
+			<li>HTML5 offers new semantic elements that define the different parts of a web page</li>
+		</ul>
+		<table id="semantic">
+			<tr>
+				<td><img src="http://www.w3schools.com/html/img_sem_elements.gif" alt="HTML 5 semantic elements" style="float:left;"></td>
+				<td>
+					<ul>
+						<li>&lt;header&gt; - Defines a header for a document or a section</li>
+						<li>&lt;nav&gt; - Defines a container for navigation links</li>
+						<li>&lt;section&gt; - Defines a section in a document</li>
+						<li>&lt;article&gt; - Defines an independent self-contained article</li>
+						<li>&lt;aside&gt; - Defines content aside from the content (like a sidebar)</li>
+						<li>&lt;footer&gt; - Defines a footer for a document or a section</li>
+						<li>&lt;details&gt; - Defines additional details</li>
+						<li>&lt;summary&gt; - Defines a heading for the &lt;details&gt; element</li>
+					</ul>
+				</td>
+			</tr>
+		</table><br>
+
+		<h2>Layout techniques:</h2>
+		<h3>CSS frameworks:</h3>
+		<p><strong>Create layouts quickly by using frameworks such as <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a> or <a href="http://www.w3schools.com/bootstrap/default.asp" target="_blank">Bootstrap</a></strong></p><br>
+		<br>
+		<h3>CSS floats:</h3>
+		<p><strong>Advantages:</strong></p>
+		<ul>
+			<li>Easy to learn</li>
+			<li>Bugs are well aware and fixes are well documented</li>
+		</ul><br>
+		<p><strong>Disadvantages:</strong></p>
+		<ul>
+			<li>Floating elements are tied to the document flow, which may harm the flexibility</li>
+			<li>No vertical centering</li>
+			<li>No equal heights</li>
+		</ul><br>
+		<p><strong>Use for:</strong>&nbsp;Large layout blocks that don't need equal heights and vertical centering</p><br>
+		<br>
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;!DOCTYPE html&gt;
+		&lt;html&gt;
+		&lt;head&gt;
+		&lt;style&gt;
+		div.css-float {
+		width: 100%;
+		border: 1px solid gray;
+		}
+
+		header.css-float, footer.css-float {
+		padding: 1em;
+		color: white;
+		background-color: black;
+		clear: left;
+		text-align: center;
+		}
+
+		nav.css-float {
+		float: left;
+		max-width: 160px;
+		margin: 0;
+		padding: 1em;
+		}
+
+		nav.css-float ul {
+		list-style-type: none;
+		padding: 0;
+		}
+
+		nav.css-float ul a {
+		text-decoration: none;
+		}
+
+		article.css-float {
+		margin-left: 170px;
+		border-left: 1px solid gray;
+		padding: 1em;
+		overflow: hidden;
+		}
+		&lt;/style&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+
+		&lt;div class="css-float"&gt;
+
+		&lt;header class="css-float"&gt;
+		&lt;h1&gt;City Gallery&lt;/h1&gt;
+		&lt;/header&gt;
+
+		&lt;nav class="css-float"&gt;
+		&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;London&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Paris&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tokyo&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;/nav&gt;
+
+		&lt;article class="css-float"&gt;
+		&lt;h2&gt;London&lt;/h2&gt;
+		&lt;p&gt;London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+		&lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.&lt;/p&gt;
+		&lt;/article&gt;
+
+		&lt;footer class="css-float"&gt;Copyright © W3Schools.com&lt;/footer&gt;
+
+		&lt;/div&gt;
+
+		&lt;/body&gt;
+		&lt;/html&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+		<div class="css-float">
+
+			<header class="css-float">
+				<h1>City Gallery</h1>
+			</header>
+
+			<nav class="css-float">
+				<ul>
+					<li><a href="#">London</a></li>
+					<li><a href="#">Paris</a></li>
+					<li><a href="#">Tokyo</a></li>
+				</ul>
+			</nav>
+
+			<article class="css-float">
+				<h2>London</h2>
+				<p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+				<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+			</article>
+
+			<footer class="css-float">Copyright © W3Schools.com</footer>
+
+		</div><br>
+
+		<h3>CSS flexbox:</h3>
+		<p><strong>Advantages:</strong></p>
+		<ul>
+			<li>Ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices</li>
+			<li>Vertical centering</li>
+			<li>Equal heights</li>
+		</ul><br>
+		<p><strong>Disadvantages:</strong></p>
+		<ul>
+			<li>Does not work in IE10 and earlier</li>
+			<li>Complex to understand and syntax is unintuitive</li>
+		</ul><br>
+		<p><strong>Use for:</strong>&nbsp;App layouts where things need to stretch and squish</p><br>
+		<br>
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;!DOCTYPE html&gt;
+		&lt;html&gt;
+		&lt;head&gt;
+		&lt;style&gt; 
+		.flex-container {
+		display: -webkit-flex;
+		display: flex;  
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		text-align: center;
+		}
+
+		.flex-container &gt; * {
+		padding: 15px;
+		-webkit-flex: 1 100%;
+		flex: 1 100%;
+		}
+
+		.article {
+		text-align: left;
+		}
+
+		header {background: black;color:white;}
+		footer {background: #aaa;color:white;}
+		.nav {background:#eee;}
+
+		.nav ul {
+		list-style-type: none;
+		padding: 0;
+		}
+		.nav ul a {
+		text-decoration: none;
+		}
+
+		@media all and (min-width: 768px) {
+		.nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+		.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+		footer {-webkit-order:3;order:3;}
+		}
+		&lt;/style&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+
+		&lt;div class="flex-container"&gt;
+		&lt;header&gt;
+		&lt;h1&gt;City Gallery&lt;/h1&gt;
+		&lt;/header&gt;
+
+		&lt;nav class="nav"&gt;
+		&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;London&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Paris&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tokyo&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;/nav&gt;
+
+		&lt;article class="article"&gt;
+		&lt;h2&gt;London&lt;/h2&gt;
+		&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom,
+		with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+		&lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia,
+		its history going back to its founding by the Romans, who named it Londinium.&lt;/p&gt;
+		&lt;p&gt;&lt;strong&gt;Resize this page to see that what happens!&lt;/strong&gt;&lt;/p&gt;
+		&lt;/article&gt;
+
+		&lt;footer&gt;Copyright © W3Schools.com&lt;/footer&gt;
+		&lt;/div&gt;
+
+		&lt;/body&gt;
+		&lt;/html&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+		<br>
+		<div class="flex-container">
+		<header class="flex-example">
+			<h1>City Gallery</h1>
+		</header>
+
+		<nav class="nav">
+			<ul>
+				<li><a href="#">London</a></li>
+				<li><a href="#">Paris</a></li>
+				<li><a href="#">Tokyo</a></li>
+			</ul>
+		</nav>
+
+		<article class="article">
+			<h2>London</h2>
+			<p>London is the capital city of England. It is the most populous city in the United Kingdom,
+			with a metropolitan area of over 13 million inhabitants.</p>
+			<p>Standing on the River Thames, London has been a major settlement for two millennia,
+			its history going back to its founding by the Romans, who named it Londinium.</p>
+			<p><strong>Resize this page to see that what happens!</strong></p>
+		</article>
+
+		<footer>Copyright © W3Schools.com</footer>
+		</div><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="forms">Forms:</h1>
+
+	</div>
+
+
+	<div>
+		<h1 id="css">CSS:</h1>
+		<h2>Borders:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		{
+				border: (Thickness of border) solid (colour);
+				padding: (Size of space in pixels in border);
+				margin: (Size of space in pixels outside border);
+			}</pre><br>
+
+		<p><strong>Example of internal styling for CSS box model:</strong></p>
+		<pre>
+		p {
+				border: 2px solid red;
+				padding: 5px;
+				margin: 10px;
+			}</pre><br>
+
+
+		<h2>Fonts:</h2>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		{
+				color: (Color);
+				font-family: (Font);
+				font-size: (Value in percentage for text to be resized in);
+			}</pre><br>
+
+		<p><strong>Example of internal styling for CSS fonts:</strong></p>
+		<pre>
+		h1 {
+				color: blue;
+				font-family: verdana;
+				font-size: 300%;
+			}
+
+
+		p  {
+				color: red;
+				font-family: courier;
+				font-size: 160%;
+			}</pre><br>
+
+
+		<h2>id Attribute:</h2>
+		<p><strong><mark>Used to define special style for one specific element</mark></strong></p><br>
+		<br>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		(Unique Tag)#(Unique id) {
+				(Font characteristics);
+			}</pre><br>
+
+		<code>&lt;(Unique tag)id="(Unique id)"&gt;(Text with special characteristics)&lt;/(Unique Tag)&gt;</code><br>
+		<br>
+		<p><strong>Example of internal styling for id Attribute:</strong></p><br>
+		<pre>&lt;style&gt;
+		p#p01 {
+				color: blue;
+			}
+		&lt;/style&gt;</pre>
+
+		<code>&lt;p id="p01"&gt;Only this paragraph is in blue&lt;/p&gt;</code><br>
+
+
+		<h2>class Attribute:</h2>
+		<p><strong><mark>Used to define a style for a class of elements</mark></strong></p><br>
+		<p><strong>Syntax:</strong></p>
+		<pre>
+		(Unique tag).(Unique class) {
+				(Font characteristics);
+			}</pre><br>
+
+		<code>&lt;(Unique tag) class="(Unique class)"&gt;(Text with special characteristics)&lt;(Unique tag)&gt;</code><br>
+		<br>
+		<p><strong>Example of internal styling for class Attribute:</strong></p><br>
+		<pre>
+		p.Class1 {
+				color: orange;
+				font-family: arial;
+			}</pre>
+
+		<code>&lt;div&gt;Orange text in arial&lt;/p&gt;</code><br>
+		<br>
+		<h2>Styles:</h2>
+
+		<p><strong>Inline styling (Inline CSS):</strong></p><br>
+		<p><strong>Syntax of HTML inline styles:</strong>&nbsp;style="property:value;"</p><br>
+		<br>
+		<table>
+			<tr>
+				<th>Property</th>
+				<th>Syntax</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td>Background color</td>
+				<td><code>&lt;body style="background-color:(color);"&gt;</code></td>
+				<td><code>&lt;body style="background-color:red;"&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Text alignment</td>
+				<td><code>&lt;(tag) style="text-align:(position);"&gt;</code></td>
+				<td><code>&lt;h1 style="text-align:center;"&gt;This is a centered heading&lt;/h1&gt;</code><br><code>&lt;p style="text-align:right;"&gt;This is a paragraph aligned to the right&lt;/h1&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Text color</td>
+				<td><code>&lt;(tag) style="color:(color);"&gt;</code></td>
+				<td><code>&lt;h1 style="color:blue;"&gt;This is a header&lt;/h1&gt;</code><br><code>&lt;p style="color:red;"&gt;This is a paragraph&lt;/p&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Text font</td>
+				<td><code>&lt;(tag) style="font-family:(font);"&gt;</code></td>
+				<td><code>&lt;h1 style="font-family:arial;"&gt;This is a header&lt;/h1&gt;</code><br><code>&lt;p style="font-family:times;"&gt;This is a paragraph&lt;/p&gt;</code></td>
+			</tr>
+			<tr>
+				<td>Text font size</td>
+				<td><code>&lt;(tag) style="font-size:(value in percentage for text to be resized in);"&gt;</code></td>
+				<td><code>&lt;h1 style="font-size:300%;"&gt;This is a header&lt;/h1&gt;</code><br><code>&lt;p style="font-size:150%;"&gt;This is a paragraph&lt;/p&gt;</code></td>
+			</tr>
+		</table><br>
+
+
+		<h2>Internal styling (Internal CSS):</h2>
+		<p><strong>Defined in the <code>&lt;head&gt;</code> section of an HTML page, within a <code>&lt;style&gt;</code> element</strong></p><br>
+		<p><strong>Example:</strong></p>
+		<pre> 
+		&lt;head&gt;
+		&lt;style&gt;
+
+		body {
+				background-color:lightgrey;
+			}
+
+		h1 {
+				color:blue;
+			}
+
+		p {
+				color:green;
+			}
+
+		&lt;/style&gt;
+		&lt;/head&gt;</pre><br>
+
+
+		<h2>External styling (External CSS):</h2>
+
+		<ul>
+			<li>Used to define style for many pages</li>
+			<li>Can change look of web page by just changing a file</li>
+		</ul><br>
+
+		<p><strong>Example:</strong></p><br>
+		<pre>
+		&lt;head&gt;
+		&lt;link rel="stylesheet" href="styles.css"&gt;
+		&lt;/head&gt;</pre><br>
+
+		<h2>Style sheet</h2>
+		<ul>
+			<li>Can be written with any note editor</li>
+			<li>Must not contain any HTML tags</li>
+			<li>Save file with .css extension</li>
+		</ul>
+
+		<p><strong>Example of style sheet:</strong></p><br>
+		<pre>
+		body {
+				background-color: lightgrey;
+			}
+
+		h1 {
+				color: blue;
+				font-size: 120%;
+			}
+
+		p {
+				color: green;
+				font-family: Arial;
+			}</pre><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="javascript">Javascript:</h1>
+		<ul>
+			<li>Commonly used for image manipulation, form validation, and dynamic changes of content</li>
+			<li>Often uses the document.getElementById(id) method to select HTML elements</li>
+		</ul><br>
+
+		<p><strong>Date and Time Example:</strong></p>
+		<pre>
+		&lt;button type="button"
+		onclick="document.getElementById('demo1').innerHTML = Date()"&gt;
+		Click me to display Date and Time.&lt;/button&gt;
+
+		&lt;p id="demo1"&gt;&lt;/p&gt;</pre><br>
+
+		<p><strong>Result:</strong></p>
+		<button type="button"
+		onclick="document.getElementById('demo1').innerHTML = Date()">
+		Click me to display Date and Time.</button>
+		<p id="demo1"></p><br>
+
+		<h2>&lt;script&gt; tag:</h2>
+		<ul>
+			<li>Used to define a client-side script (JavaScript)</li>
+			<li>Contains either scripting statements, or points to an external script file through the src attribute</li>
+		</ul>
+
+
+		<p><strong>Example where Javascript changes HTML content:</strong></p>
+		<pre>
+		&lt;button type="button" onclick="myFunction1()"&gt;Click Me!&lt;/button&gt;
+
+		&lt;p id="demo2"&gt;This is a demonstration.&lt;/p&gt;
+
+		&lt;script&gt;
+		function myFunction1() { 
+		document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+		}
+		&lt;/script&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+
+		<button type="button" onclick="myFunction1()">Click Me!</button>
+
+		<p id="demo2">This is a demonstration.</p>
+
+		<script>
+		function myFunction1() { 
+		document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+		}
+		</script><br>
+
+
+		<p><strong>Example where Javascript changes HTML styles:</strong></p>
+		<pre>
+		&lt;p id="demo3"&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
+
+		&lt;script&gt;
+		function myFunction2() {
+		document.getElementById("demo3").style.fontSize = "25px"; 
+		document.getElementById("demo3").style.color = "red";     
+		}
+		&lt;/script&gt;
+
+		&lt;button type="button" onclick="myFunction2()"&gt;Click Me!&lt;/button&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+
+		<button type="button" onclick="myFunction2()">Click Me!</button>
+
+		<p id="demo3">JavaScript can change the style of an HTML element.</p>
+
+		<script>
+		function myFunction2() {
+		document.getElementById("demo3").style.fontSize = "25px"; 
+		document.getElementById("demo3").style.color = "red";     
+		}
+		</script><br>
+
+
+		<p><strong>Example where Javascript changes HTML attributes:</strong></p>
+		<pre>
+		&lt;script&gt;
+		function light(sw) {
+		var pic;
+		if (sw == 0) {
+		pic = "http://www.w3schools.com/html/pic_bulboff.gif"
+		} else {
+		pic = "http://www.w3schools.com/html/pic_bulbon.gif"
+		}
+		document.getElementById('myImage').src = pic;
+		}
+		&lt;/script&gt;
+
+		&lt;img id="myImage" src="http://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180"&gt;
+
+		&lt;p&gt;
+		&lt;button type="button" onclick="light(1)"&gt;Light On&lt;/button&gt;
+		&lt;button type="button" onclick="light(0)"&gt;Light Off&lt;/button&gt;
+		&lt;/p&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+		<script>
+		function light(sw) {
+		var pic;
+		if (sw == 0) {
+		pic = "http://www.w3schools.com/html/pic_bulboff.gif"
+		} else {
+		pic = "http://www.w3schools.com/html/pic_bulbon.gif"
+		}
+		document.getElementById('myImage').src = pic;
+		}
+		</script>
+
+		<img id="myImage" src="http://www.w3schools.com/html/pic_bulboff.gif" alt="Bulb off" width="100" height="180">
+
+		<p>
+		<button type="button" onclick="light(1)">Light On</button>
+		<button type="button" onclick="light(0)">Light Off</button>
+		</p><br>
+
+
+		<h2>&lt;noscript&gt; tag:</h2>
+		<p><strong>Used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts</strong></p><br>
+		<br>
+		<p><strong>Example:</strong></p>
+		<pre>
+		&lt;p id="demo4"&gt;&lt;/p&gt;
+
+		&lt;script&gt;
+		document.getElementById("demo4").innerHTML = "Your browser supports JavaScript!";
+		&lt;/script&gt;
+
+		&lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;</pre><br>
+
+		<p><strong>Result:</strong></p><br>
+		<p id="demo4"></p>
+
+		<script>
+		document.getElementById("demo4").innerHTML = "Your browser supports JavaScript!";
+		</script>
+
+		<noscript>Sorry, your browser does not support JavaScript!</noscript><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+
+	<div>
+		<h1 id="references">Reference List:</h1>
+		<ul>
+			<li><a href="http://www.w3schools.com/html/html_entities.asp" target="_blank">HTML entities</a></li>
+			<li><a href="http://www.w3schools.com/html/html_symbols.asp" target="_blank">HTML symbols</a></li>
+			<li><a href="http://www.w3schools.com/html/html_charset.asp" target="_blank">HTML charset</a></li>
+			<li><a href="http://www.w3schools.com/html/html_urlencode.asp">HTML URL encode</a></li>
+		</ul>
+	</div>
+
+
+	<div>
+		<h1 id="notes">Notes:</h1>
+		<ul>
+			<li>Use lowercase for elements and attributes</li>
+
+			<li>No spacing between tags and displayed text</li>
+
+			<li>Use HTML headings for headings only, not to bold or enlarge text</li>
+
+			<li>Use American spelling</li>
+
+			<li>Use single/double quotation marks depending on situation<br>
+			<code>&lt;p title='John "ShotGun" Nelson'&gt;</code> OR <code>&lt;p title="John 'ShotGun' Nelson"&gt;</code></li>
+
+			<li>HTML head contains meta data which is not displayed</li>
+
+			<li><a href="http://stackoverflow.com/questions/271743/whats-the-difference-between-b-and-strong-i-and-em" target="_blank">Formatting</a>&nbsp;(TL;DR - Try to use <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> as they are semantic. Text to speech and mobile browsers can’t detect <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>)</li>
+
+			<li>Use blockquotes for long quotations (Paragraphs and sections). Blockquote elements are usually indented</li>
+
+			<li><code>&lt;address&gt;</code> elements are italicised. Most browsers will add a line break before and after the element.</li>
+
+			<li>Bi-Directional Override is to override the current text direction. Use attribute value of either ‘ltr’ or ‘rtl’.</li>
+
+			<li><sub>Subscripted Text</sub><sup>Superscripted Text</sup></li>
+
+			<li><a href="http://stackoverflow.com/questions/8937384/what-is-the-difference-between-tags-and-elements-html" target="_blank">Difference between HTML tags and elements</a></li>
+		</ul><br>
+
+		<a href="#">Back to top of page</a>
+	</div>
+
+</body>
+</html>
