@@ -14,6 +14,6 @@ def max_product(int_array):
     return max_product
 
 
-n = [-2, -3, -1, -4, -6]
+n = [-2, -3, -9, 0, -4, -6]
 
 print(max_product(n))
